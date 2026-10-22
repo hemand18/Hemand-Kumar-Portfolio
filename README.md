@@ -1,19 +1,29 @@
 # Hemand Kumar — Portfolio
 
-A responsive, single-page portfolio built with plain HTML, CSS and JavaScript.
+A responsive, single-page portfolio built with React and Vite.
 
 ## Run locally
-Open `index.html` in any modern browser.
 
-## Customize before publishing
-Search `index.html` for:
-- `YOUR_EMAIL@example.com`
-- `YOUR_GITHUB`
-- `YOUR_LINKEDIN`
+Install dependencies and start the development server:
 
-Replace those placeholders with your real links.
+```sh
+npm install
+npm run dev
+```
 
-You can also add a `resume.pdf` file and change the hero/contact buttons if you want a resume download.
+## Build for production
+
+```sh
+npm run build
+npm run preview
+```
+
+The production site is generated in `dist/`. The portfolio content and links
+are defined in `src/App.jsx`; the existing responsive styles are in
+`style.css`.
 
 ## Publish on GitHub Pages
-Create a repository, upload `index.html`, `style.css`, and `script.js`, then enable GitHub Pages from the repository's Pages settings. The site is a static HTML/CSS/JS project, so no server is required.
+
+Build the app with `npm run build` and publish the generated `dist/` directory.
+For a project page served from a repository subpath, configure Vite's `base`
+option to match that path before building.
