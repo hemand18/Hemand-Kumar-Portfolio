@@ -2,7 +2,7 @@ import { Download, GraduationCap, Sparkles, User } from 'lucide-react'
 import Reveal, { Section } from './Reveal'
 import { about, interests, profile } from '../data/portfolioData'
 
-import about from '../assets/about.png'
+import about from '../assets/about-1.png'
 
 export default function About() {
   return (

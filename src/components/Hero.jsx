@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Github, Linkedin, Download, ArrowDown, User } from 'lucide-react'
 import { profile, stats } from '../data/portfolioData'
 
-import hero from '../assets/hero.png'
+import hero from '../assets/hero-1.png'
 
 
 export default function Hero() {
