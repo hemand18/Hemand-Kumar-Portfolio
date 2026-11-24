@@ -5,7 +5,6 @@ import { profile, stats } from '../data/portfolioData'
 
 import hero1 from '../assets/hero-1.png'
 
-
 export default function Hero() {
   const [i, setI] = useState(0)
   useEffect(() => { const t = setInterval(() => setI((n) => (n + 1) % profile.titles.length), 2400); return () => clearInterval(t) }, [])
@@ -45,7 +44,6 @@ export default function Hero() {
         </motion.div>
         <motion.div initial={{ opacity: 0, scale: 0.94 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.9, delay: 0.2 }} className="mx-auto w-full max-w-xs">
           <div className="rounded-[2rem] bg-gradient-to-br from-accent/60 via-line to-accent2/60 p-px">
-            {/* Replace placeholder with: <img src="/profile.jpg" alt="R. Hemand Kumar" className="h-full w-full rounded-[2rem] object-cover" /> */}
             <img src={hero1} alt="R. Hemand Kumar" className="h-full w-full rounded-[2rem] object-cover" />
           </div>
         </motion.div>
