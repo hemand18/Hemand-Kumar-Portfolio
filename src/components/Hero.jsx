@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Github, Linkedin, Download, ArrowDown, User } from 'lucide-react'
 import { profile, stats } from '../data/portfolioData'
 
-import hero from '../assets/hero-1.png'
+import Hero from '../assets/hero-1.png'
 
 
 export default function Hero() {
@@ -46,7 +46,7 @@ export default function Hero() {
         <motion.div initial={{ opacity: 0, scale: 0.94 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.9, delay: 0.2 }} className="mx-auto w-full max-w-xs">
           <div className="rounded-[2rem] bg-gradient-to-br from-accent/60 via-line to-accent2/60 p-px">
             {/* Replace placeholder with: <img src="/profile.jpg" alt="R. Hemand Kumar" className="h-full w-full rounded-[2rem] object-cover" /> */}
-            <img src={hero} alt="R. Hemand Kumar" className="h-full w-full rounded-[2rem] object-cover" />
+            <img src={Hero} alt="R. Hemand Kumar" className="h-full w-full rounded-[2rem] object-cover" />
           </div>
         </motion.div>
         <dl className="grid grid-cols-2 gap-6 border-t border-line pt-8 lg:col-span-2 lg:grid-cols-4">
