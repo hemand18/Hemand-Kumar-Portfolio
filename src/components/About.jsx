@@ -2,7 +2,7 @@ import { Download, GraduationCap, Sparkles, User } from 'lucide-react'
 import Reveal, { Section } from './Reveal'
 import { about, interests, profile } from '../data/portfolioData'
 
-import About from '../assets/about-1.png'
+import about1 from '../assets/about-1.png'
 
 export default function About() {
   return (
@@ -10,7 +10,7 @@ export default function About() {
       <div className="grid gap-12 lg:grid-cols-[320px_1fr]">
         <Reveal>
           <div className="aspect-[4/5] overflow-hidden rounded-3xl border border-line bg-panel">
-            <img src={About} alt="R. Hemand Kumar" className="h-full w-full object-cover" />
+            <img src={about1} alt="R. Hemand Kumar" className="h-full w-full object-cover" />
           </div>
         </Reveal>
         <Reveal delay={0.1}>
