@@ -1,3 +1,6 @@
+import project1Image from '../assets/project-1.png'
+import project2Image from '../assets/project-2.png'
+
 export const profile = {
   name: 'R. Hemand Kumar', short: 'Hemand',
   titles: ['Full Stack Developer', 'Data Scientist'],
@@ -24,9 +27,12 @@ export const experience = [
     org: 'Zuntra Digital', 
     period: 'September 2026 – February 2027',
     points: ['Developed an AI-powered productivity application for personalized planning, goal management, and AI-assisted workflows.',
-      'Built a React.js frontend with a FastAPI backend.', 'Integrated large language models using the Groq API.',
-      'Implemented authentication and user-specific data management.', 'Developed features for chat history, goals, and user preferences.',
-      'Worked with PostgreSQL integration and API configuration.', 'Worked on frontend and backend deployment using Vercel and Render.'],
+      'Built a React.js frontend with a FastAPI backend.', 
+      'Integrated large language models using the Groq API.',
+      'Implemented authentication and user-specific data management.', 
+      'Developed features for chat history, goals, and user preferences.',
+      'Worked with PostgreSQL integration and API configuration.', 
+      'Worked on frontend and backend deployment using Vercel and Render.'],
     tech: ['React.js', 'Python', 'FastAPI', 'PostgreSQL', 'Groq API', 'REST APIs', 'Vercel', 'Render'] },
 {
   role: 'Virtual Data Science with Python Trainee',
@@ -37,6 +43,9 @@ export const experience = [
     'Designed four customizable resume templates: Classic, Modern, Professional, and Minimal.',
     'Built a dynamic resume preview interface with real-time editing capabilities.',
     'Integrated PDF generation and printing functionality for resume downloads.',
+    'Conducted exploratory data analysis (EDA) to identify patterns, trends, and insights from datasets.',
+    'Created data visualizations using Matplotlib and Seaborn to communicate analytical findings.',
+    'Applied basic statistical techniques to summarize and interpret datasets.',
   ],
   tech: ['Python','Pandas','NumPy','Data Cleaning','Statistical Analysis','Application Development']
 }
@@ -51,11 +60,11 @@ export const skills = [
   ['Soft Skills', ['Problem-Solving', 'Analytical Thinking', 'Communication', 'Team Collaboration', 'Adaptability', 'Time Management', 'Attention to Detail']],
 ]
 export const projects = [
-  { name: 'AI-Native-Life', subtitle: 'AI-Powered Personal Productivity Platform', image: '', github: '', live: '', detail: '',
+  { name: 'AI-Native-Life', subtitle: 'AI-Powered Personal Productivity Platform', image: project1Image, github: 'https://github.com/hemand18/AI-Native-Life.git', live: 'https://ai-native-life.vercel.app/', detail: '',
     description: 'An AI-powered productivity application designed to support personalized planning, goal management, and AI-assisted workflows.',
     features: ['AI-powered assistance', 'Personalized planning', 'Goal management', 'User authentication', 'User-specific data management', 'Chat history and preferences', 'Frontend and backend integration'],
     tech: ['React.js', 'Python', 'FastAPI', 'PostgreSQL', 'Groq API', 'REST APIs'] },
-  { name: 'ResumeCraft', subtitle: 'Modern Resume Builder Application', image: '', github: '', live: '', detail: '',
+  { name: 'ResumeCraft', subtitle: 'Modern Resume Builder Application', image: project2Image, github: 'https://github.com/hemand18/ResumeCraft-Website.git', live: 'https://resume-craft-website-liard.vercel.app/', detail: '',
     description: 'A resume-building application that allows users to create, customize, preview, save, and export professional resumes.',
     features: ['Personal information management', 'Education and experience sections', 'Skills and project management', 'Classic, Modern, Professional, Minimal templates', 'Live resume preview', 'PDF generation and print', 'Local data storage'],
     tech: ['Python', 'PDF Generation', 'Local Storage'] },
