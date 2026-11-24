@@ -2,14 +2,15 @@ import { Download, GraduationCap, Sparkles, User } from 'lucide-react'
 import Reveal, { Section } from './Reveal'
 import { about, interests, profile } from '../data/portfolioData'
 
+import about from '../assets/about.png'
+
 export default function About() {
   return (
     <Section id="about" title="A Little About Me">
       <div className="grid gap-12 lg:grid-cols-[320px_1fr]">
         <Reveal>
           <div className="aspect-[4/5] overflow-hidden rounded-3xl border border-line bg-panel">
-            {/* Replace with <img src="/profile.jpg" alt="R. Hemand Kumar" loading="lazy" className="h-full w-full object-cover" /> */}
-            <div className="flex h-full items-center justify-center text-mute"><User size={64} strokeWidth={1} /></div>
+            <img src={about} alt="R. Hemand Kumar" className="h-full w-full object-cover" />
           </div>
         </Reveal>
         <Reveal delay={0.1}>

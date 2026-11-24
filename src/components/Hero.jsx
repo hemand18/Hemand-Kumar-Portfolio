@@ -3,6 +3,9 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Github, Linkedin, Download, ArrowDown, User } from 'lucide-react'
 import { profile, stats } from '../data/portfolioData'
 
+import hero from '../assets/hero.png'
+
+
 export default function Hero() {
   const [i, setI] = useState(0)
   useEffect(() => { const t = setInterval(() => setI((n) => (n + 1) % profile.titles.length), 2400); return () => clearInterval(t) }, [])
@@ -43,7 +46,7 @@ export default function Hero() {
         <motion.div initial={{ opacity: 0, scale: 0.94 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.9, delay: 0.2 }} className="mx-auto w-full max-w-xs">
           <div className="rounded-[2rem] bg-gradient-to-br from-accent/60 via-line to-accent2/60 p-px">
             {/* Replace placeholder with: <img src="/profile.jpg" alt="R. Hemand Kumar" className="h-full w-full rounded-[2rem] object-cover" /> */}
-            <div className="flex aspect-[4/5] items-center justify-center rounded-[2rem] bg-panel text-mute"><User size={72} strokeWidth={1} aria-label="Profile photo placeholder" /></div>
+            <img src={hero} alt="R. Hemand Kumar" className="h-full w-full rounded-[2rem] object-cover" />
           </div>
         </motion.div>
         <dl className="grid grid-cols-2 gap-6 border-t border-line pt-8 lg:col-span-2 lg:grid-cols-4">
