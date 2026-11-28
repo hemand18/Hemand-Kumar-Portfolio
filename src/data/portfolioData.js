@@ -1,5 +1,6 @@
 import project1Image from '../assets/project-1.png'
 import project2Image from '../assets/project-2.png'
+import project3Image from '../assets/project-3.png'
 
 export const profile = {
   name: 'R. Hemand Kumar', short: 'Hemand',
@@ -68,6 +69,10 @@ export const projects = [
     description: 'A resume-building application that allows users to create, customize, preview, save, and export professional resumes.',
     features: ['Personal information management', 'Education and experience sections', 'Skills and project management', 'Classic, Modern, Professional, Minimal templates', 'Live resume preview', 'PDF generation and print', 'Local data storage'],
     tech: ['Python', 'PDF Generation', 'Local Storage'] },
+  { name: 'Hirelytics', subtitle: 'Job Market Intelligence & Salary Prediction Platform', image: project3Image, github: 'https://github.com/hemand18/Hirelytics.git', live: 'https://frontend-rhk5.vercel.app/', detail: '',
+    description: 'A data-driven job market intelligence platform designed to analyze employment trends, identify in-demand skills, explore salary patterns, and provide personalized career insights.',
+    features: ['Interactive job market analytics dashboard', 'In-demand skills analysis and visualization', 'Salary trends and insights by job role and location', 'Machine learning-based salary prediction', 'Skill gap analysis for targeted career roles'],
+    tech: ['Python', 'Pandas', 'NumPy', 'Scikit-learn', 'Machine Learning'] },
 ]
 export const education = [
   { title: 'Bachelor of Computer Applications (BCA)', org: 'Saveetha College of Liberal Arts and Sciences', period: '2024 – 2027', score: 'CGPA: 7.69/10', icon: 'grad' },
